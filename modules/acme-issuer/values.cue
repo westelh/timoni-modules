@@ -5,24 +5,4 @@
 
 package main
 
-// Example values from https://cert-manager.io/docs/configuration/acme/
-values: {
-	spec: {
-		acme: {
-			email:  "user@example.com"
-			server: "https://acme-staging-v02.api.letsencrypt.org/directory"
-			privateKeySecretRef: {
-				name: "example-issuer-account-key"
-			}
-			solvers: [
-				{
-					http01: {
-						ingress: {
-							ingressClassName: "nginx"
-						}
-					}
-				},
-			]
-		}
-	}
-}
+values: {}

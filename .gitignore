@@ -1,0 +1,17 @@
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+
+# OS / temp
+*.swp
+*.swo
+*~
+
+# Node (if any tooling gets added later)
+node_modules/
+
+# Build/artifacts (if any tooling gets added later)
+dist/
+build/

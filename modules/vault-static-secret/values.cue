@@ -7,4 +7,20 @@ package main
 
 // Defaults
 values: {
+	address: "http://localhost:8200"
+	auth: {
+		method: "kubernetes"
+		mount:  "kubernetes"
+	}
+	secret: {
+		destination: {
+			name: "example-secret"
+		}
+		path: "app/secret"
+		type: "kv-v2"
+		mount: "kv"
+	}
+	serviceAccount: {
+		create: true
+	}
 }

@@ -32,6 +32,14 @@ import (
 	// The annotations allows adding `metadata.annotations` to all resources.
 	metadata: annotations?: timoniv1.#Annotations
 
+	serviceAccount: {
+		create: *false | bool
+		name:   *metadata.name | string
+		labels?: timoniv1.#Labels
+		annotations?: timoniv1.#Annotations
+		automountServiceAccountToken?: bool
+	}
+
 	address:             string
 	skipTLSVerify:       *false | bool
 	tlsServerName?:      string
@@ -51,6 +59,10 @@ import (
 	config: #Config
 
 	objects: {
+		if config.serviceAccount.create {
+			sa: #ServiceAccount & {#config: config}
+		}
+
 		vc: #VaultConnection & {#config: config}
 
 		va: #VaultAuth & {

@@ -11,5 +11,13 @@ import (
 	metadata: #config.metadata
 	spec: #config.auth & {
 		vaultConnectionRef: #vc.metadata.name
+		if #config.serviceAccount.create {
+			if #config.auth.kubernetes != _|_ {
+				kubernetes: serviceAccount: *#config.serviceAccount.name | string
+			}
+			if #config.auth.jwt != _|_ {
+				jwt: serviceAccount: *#config.serviceAccount.name | string
+			}
+		}
 	}
 }

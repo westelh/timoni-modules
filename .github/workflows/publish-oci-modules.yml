@@ -97,5 +97,5 @@ jobs:
             -a "org.opencontainers.image.title=timoni-$module" \
             -a "org.opencontainers.image.description=Timoni module $module." \
             -a "org.opencontainers.image.licenses=Apache-2.0" \
-            -a "org.opencontainers.image.source=https://github.com/${{ github.repository }}" \
-            -a "org.opencontainers.image.url=https://github.com/${{ github.repository }}"
+            -a "org.opencontainers.image.source=https://github.com/${{ github.repository }}/tree/${{ github.ref_name }}/$module" \
+            -a "org.opencontainers.image.url=https://github.com/${{ github.repository }}/tree/${{ github.ref_name }}/$module"

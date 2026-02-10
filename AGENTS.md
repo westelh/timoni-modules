@@ -32,4 +32,4 @@ For pull requests:
 - If the change affects publishing, mention the expected tag format.
 
 ## Release & Publishing Notes
-Publishing is tag-driven via GitHub Actions. Tags must be in the form `<module>/<version>`; a leading `v` in the version is allowed and will be stripped (for example, `acme-issuer/v1.2.3`). The workflow runs `timoni mod vet` and publishes to GHCR.
+Publishing is tag-driven via GitHub Actions. Tags must be in the form `<module>/<version>`; a leading `v` in the version is allowed and will be stripped (for example, `acme-issuer/v1.2.3`). The workflow runs `timoni mod vet` and publishes to GHCR, setting OCI annotations to the module subpath for the tag (for example, `.../tree/<module>/<version>/<module>`).

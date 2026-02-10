@@ -14,7 +14,7 @@ This repository contains a collection of Timoni modules for Kubernetes add-ons a
 - `oke-fss-storageclass`
 - `selfsigned-issuer`
 - `vault-connection`
-- `vault-secret-sync`
+- `vault-kubernetes-auth`
 - `vault-static-secret`
 
 ## Usage

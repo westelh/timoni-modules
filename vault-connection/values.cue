@@ -6,6 +6,4 @@
 package main
 
 // Defaults
-values: {
-	server: address: "vault.example.com"
-}
+values: {}

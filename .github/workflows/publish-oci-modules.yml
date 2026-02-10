@@ -58,7 +58,7 @@ jobs:
             echo "Module directory '$module' not found."
             exit 1
           fi
-          timoni mod vet "./$module" --values debug_values.cue
+          timoni mod vet "./$module" --values "./$module/debug_values.cue"
 
       - name: Publish module
         env:

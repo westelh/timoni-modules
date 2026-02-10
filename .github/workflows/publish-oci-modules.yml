@@ -47,6 +47,7 @@ jobs:
 
           module="${TAG_NAME%%/*}"
           version="${TAG_NAME#*/}"
+          version="${version#v}"
 
           if [ -z "$module" ] || [ -z "$version" ]; then
             echo "Invalid tag '$TAG_NAME'. Expected '<module>/<version>'."
@@ -72,6 +73,7 @@ jobs:
 
           module="${TAG_NAME%%/*}"
           version="${TAG_NAME#*/}"
+          version="${version#v}"
 
           if [ -z "$module" ] || [ -z "$version" ]; then
             echo "Invalid tag '$TAG_NAME'. Expected '<module>/<version>'."

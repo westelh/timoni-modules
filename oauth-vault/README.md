@@ -7,7 +7,7 @@ A [timoni.sh](http://timoni.sh) module for deploying oauth-vault to Kubernetes c
 To create an instance using the default values:
 
 ```shell
-timoni -n default apply oauth-vault oci://ghcr.io/westelh/timoni/modules/xxx
+timoni -n default apply oauth-vault oci://ghcr.io/westelh/timoni/modules/oauth-vault
 ```
 
 To change the [default configuration](#configuration),
@@ -27,7 +27,7 @@ values: {
 And apply the values with:
 
 ```shell
-timoni -n default apply oauth-vault oci://ghcr.io/westelh/timoni/modules/xxx \
+timoni -n default apply oauth-vault oci://ghcr.io/westelh/timoni/modules/oauth-vault \
 --values ./my-values.cue
 ```
 

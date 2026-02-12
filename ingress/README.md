@@ -7,7 +7,7 @@ A [timoni.sh](http://timoni.sh) module for deploying ingress to Kubernetes clust
 To create an instance using the default values:
 
 ```shell
-timoni -n default apply ingress oci://ghcr.io/westelh/timoni/modules/xxx
+timoni -n default apply ingress oci://ghcr.io/westelh/timoni/modules/ingress
 ```
 
 To change the [default configuration](#configuration),
@@ -27,7 +27,7 @@ values: {
 And apply the values with:
 
 ```shell
-timoni -n default apply ingress oci://ghcr.io/westelh/timoni/modules/xxx \
+timoni -n default apply ingress oci://ghcr.io/westelh/timoni/modules/ingress \
 --values ./my-values.cue
 ```
 

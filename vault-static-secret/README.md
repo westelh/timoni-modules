@@ -1,13 +1,13 @@
-# vault-secret
+# vault-static-secret
 
-A [timoni.sh](http://timoni.sh) module for deploying vault-secret to Kubernetes clusters.
+A [timoni.sh](http://timoni.sh) module for deploying vault-static-secret to Kubernetes clusters.
 
 ## Install
 
 To create an instance using the default values:
 
 ```shell
-timoni -n default apply vault-secret oci://<container-registry-url>
+timoni -n default apply vault-static-secret oci://<container-registry-url>
 ```
 
 To change the [default configuration](#configuration),
@@ -27,7 +27,7 @@ values: {
 And apply the values with:
 
 ```shell
-timoni -n default apply vault-secret oci://<container-registry-url> \
+timoni -n default apply vault-static-secret oci://<container-registry-url> \
 --values ./my-values.cue
 ```
 
@@ -36,7 +36,7 @@ timoni -n default apply vault-secret oci://<container-registry-url> \
 To uninstall an instance and delete all its Kubernetes resources:
 
 ```shell
-timoni -n default delete vault-secret
+timoni -n default delete vault-static-secret
 ```
 
 ## Configuration

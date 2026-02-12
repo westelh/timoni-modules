@@ -7,7 +7,7 @@ A [timoni.sh](http://timoni.sh) module for deploying vault-static-secret to Kube
 To create an instance using the default values:
 
 ```shell
-timoni -n default apply vault-static-secret oci://<container-registry-url>
+timoni -n default apply vault-static-secret oci://ghcr.io/westelh/timoni/modules/xxx
 ```
 
 To change the [default configuration](#configuration),
@@ -27,7 +27,7 @@ values: {
 And apply the values with:
 
 ```shell
-timoni -n default apply vault-static-secret oci://<container-registry-url> \
+timoni -n default apply vault-static-secret oci://ghcr.io/westelh/timoni/modules/xxx \
 --values ./my-values.cue
 ```
 

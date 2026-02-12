@@ -9,7 +9,7 @@ This module requires the HashiCorp Vault Secrets Operator CRDs (including `Vault
 To create an instance using the default values:
 
 ```shell
-timoni -n default apply vault-dynamic-secret oci://ghcr.io/westelh/timoni/modules/xxx
+timoni -n default apply vault-dynamic-secret oci://ghcr.io/westelh/timoni/modules/vault-dynamic-secret
 ```
 
 To change the [default configuration](#configuration),
@@ -37,7 +37,7 @@ values: {
 And apply the values with:
 
 ```shell
-timoni -n default apply vault-dynamic-secret oci://ghcr.io/westelh/timoni/modules/xxx \
+timoni -n default apply vault-dynamic-secret oci://ghcr.io/westelh/timoni/modules/vault-dynamic-secret \
 --values ./my-values.cue
 ```
 

@@ -7,7 +7,7 @@ A [timoni.sh](http://timoni.sh) module for deploying oke-fss-storageclass to Kub
 To create an instance using the default values:
 
 ```shell
-timoni -n default apply oke-fss-storageclass oci://ghcr.io/westelh/timoni/modules/xxx
+timoni -n default apply oke-fss-storageclass oci://ghcr.io/westelh/timoni/modules/oke-fss-storageclass
 ```
 
 To change the [default configuration](#configuration),
@@ -27,7 +27,7 @@ values: {
 And apply the values with:
 
 ```shell
-timoni -n default apply oke-fss-storageclass oci://ghcr.io/westelh/timoni/modules/xxx \
+timoni -n default apply oke-fss-storageclass oci://ghcr.io/westelh/timoni/modules/oke-fss-storageclass \
 --values ./my-values.cue
 ```
 

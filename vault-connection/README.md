@@ -7,7 +7,7 @@ A [timoni.sh](http://timoni.sh) module for deploying VaultConnection resources t
 To create an instance using the default values:
 
 ```shell
-timoni -n default apply vault-connection oci://ghcr.io/westelh/timoni/modules/xxx
+timoni -n default apply vault-connection oci://ghcr.io/westelh/timoni/modules/vault-connection
 ```
 
 To change the [default configuration](#configuration),
@@ -27,7 +27,7 @@ values: {
 And apply the values with:
 
 ```shell
-timoni -n default apply vault-connection oci://ghcr.io/westelh/timoni/modules/xxx \
+timoni -n default apply vault-connection oci://ghcr.io/westelh/timoni/modules/vault-connection \
 --values ./my-values.cue
 ```
 

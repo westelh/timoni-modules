@@ -7,7 +7,7 @@ A [timoni.sh](http://timoni.sh) module for deploying oci-native-ingressclass to 
 To create an instance using the default values:
 
 ```shell
-timoni -n default apply oci-native-ingressclass oci://ghcr.io/westelh/timoni/modules/xxx
+timoni -n default apply oci-native-ingressclass oci://ghcr.io/westelh/timoni/modules/oci-native-ingressclass
 ```
 
 To change the [default configuration](#configuration),
@@ -27,7 +27,7 @@ values: {
 And apply the values with:
 
 ```shell
-timoni -n default apply oci-native-ingressclass oci://ghcr.io/westelh/timoni/modules/xxx \
+timoni -n default apply oci-native-ingressclass oci://ghcr.io/westelh/timoni/modules/oci-native-ingressclass \
 --values ./my-values.cue
 ```
 

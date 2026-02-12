@@ -7,7 +7,7 @@ A [timoni.sh](http://timoni.sh) module for deploying letsencrypt-issuer to Kuber
 To create an instance using the default values:
 
 ```shell
-timoni -n default apply letsencrypt-issuer oci://ghcr.io/westelh/timoni/modules/xxx
+timoni -n default apply letsencrypt-issuer oci://ghcr.io/westelh/timoni/modules/letsencrypt-issuer
 ```
 
 To change the [default configuration](#configuration),
@@ -27,7 +27,7 @@ values: {
 And apply the values with:
 
 ```shell
-timoni -n default apply letsencrypt-issuer oci://ghcr.io/westelh/timoni/modules/xxx \
+timoni -n default apply letsencrypt-issuer oci://ghcr.io/westelh/timoni/modules/letsencrypt-issuer \
 --values ./my-values.cue
 ```
 

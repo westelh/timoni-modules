@@ -7,7 +7,7 @@ A [timoni.sh](http://timoni.sh) module for deploying acme-cluster-issuer to Kube
 To create an instance using the default values:
 
 ```shell
-timoni -n default apply acme-cluster-issuer oci://ghcr.io/westelh/timoni/modules/xxx
+timoni -n default apply acme-cluster-issuer oci://ghcr.io/westelh/timoni/modules/acme-cluster-issuer
 ```
 
 To change the [default configuration](#configuration),
@@ -27,7 +27,7 @@ values: {
 And apply the values with:
 
 ```shell
-timoni -n default apply acme-cluster-issuer oci://ghcr.io/westelh/timoni/modules/xxx \
+timoni -n default apply acme-cluster-issuer oci://ghcr.io/westelh/timoni/modules/acme-cluster-issuer \
 --values ./my-values.cue
 ```
 

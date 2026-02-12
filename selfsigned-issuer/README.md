@@ -7,7 +7,7 @@ A [timoni.sh](http://timoni.sh) module for deploying selfsigned-issuer to Kubern
 To create an instance using the default values:
 
 ```shell
-timoni -n default apply selfsigned-issuer oci://ghcr.io/westelh/timoni/modules/xxx
+timoni -n default apply selfsigned-issuer oci://ghcr.io/westelh/timoni/modules/selfsigned-issuer
 ```
 
 To change the [default configuration](#configuration),
@@ -27,7 +27,7 @@ values: {
 And apply the values with:
 
 ```shell
-timoni -n default apply selfsigned-issuer oci://ghcr.io/westelh/timoni/modules/xxx \
+timoni -n default apply selfsigned-issuer oci://ghcr.io/westelh/timoni/modules/selfsigned-issuer \
 --values ./my-values.cue
 ```
 

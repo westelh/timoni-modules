@@ -1,2 +1,2 @@
 module: "timoni.sh/oauth-vault"
-language: version: "v0.9.0"
+language: version: "v0.17.1"
